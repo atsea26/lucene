@@ -23,6 +23,7 @@ public class IndexManager {
 
     @Before
     public void init() throws Exception{
+        System.out.println("666");
         IndexWriter indexWriter = new IndexWriter(FSDirectory.open(new File("D:\\java\\temp-lucene\\index").toPath()),new IndexWriterConfig(new IKAnalyzer()));
     }
 
